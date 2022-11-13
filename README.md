@@ -1,4 +1,5 @@
 # Markdown Blog
+to use this just add a .env file and write DB_CONNECT={get this connection link from your mongo db cluster}
 This [markdown](https://www.computerhope.com/jargon/m/markdown.htm) blog is built with Node.js Express and MongoDB Atlas, and runs in a Docker container. Users can get blog posts from the MongoDB cluster, and post new articles, update and delete them.
 
 ## Main Page
