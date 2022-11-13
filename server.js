@@ -5,7 +5,7 @@ const dotenv = require('dotenv');
 const articleRouter = require('./routes/articles');
 const methodOverride = require('method-override');
 const app = express();
-
+const PORT = process.env.PORT;
 dotenv.config();
 
 mongoose.connect(process.env.DB_CONNECT, {
@@ -26,4 +26,4 @@ app.get('/', async (req, res) => {
 
 app.use('/articles', articleRouter); // Tells the app to use articleRouter
 
-app.listen(8080);
+app.listen(PORT);
